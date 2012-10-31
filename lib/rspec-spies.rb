@@ -17,6 +17,7 @@ end
 
 require 'rspec/expectations'
 require 'rspec/matchers'
+require 'rspec/mocks/argument_list_matcher'
 argument_expectation_class = RSpec::Mocks.const_defined?(:ArgumentExpectation) ?
                                RSpec::Mocks::ArgumentExpectation :
                                RSpec::Mocks::ArgumentListMatcher
